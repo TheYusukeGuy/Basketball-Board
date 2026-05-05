@@ -1,0 +1,59 @@
+@font-face {
+    src: url("Fonts/CursedTimer.ttf");
+    font-family: timer;
+}
+
+body {
+    text-align: center;
+    background-color: #1B244A;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+#scoresboard {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.team-name {
+    color: #EEEEEE;
+    font-size: 40px;
+}
+
+#home-score-num, #guest-score-num {
+    background-color: #080001;
+    color: #F94F6D;
+    padding: 20px 50px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: timer;
+    font-size: 60px;
+}
+
+.score-btn {
+    color: #9AABD8;
+    border: 3px solid #9AABD8;
+    border-radius: 8px;
+    font-family: timer;
+    font-size: 20px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+#new-game-btn {
+    color: #9AABD8;
+    border-radius: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 40px;
+    background-color: transparent;
+}
+
+#the-winner {
+    color: #EEEEEE;
+    /* background-color: #F94F6D;?>?? */
+}
