@@ -1,10 +1,10 @@
 let homeScr = document.getElementById("home-score-num")
-let guestScr = document.getElementById("guest-score-num")
+let awayScr = document.getElementById("away-score-num")
 
 let theWinnerEl = document.getElementById("the-winner")
 
 let homeCount = 0
-let guestCount = 0
+let awayCount = 0
 
 function HomePlusOne() {
     homeCount += 1;
@@ -24,40 +24,40 @@ function HomePlusThree() {
     CheckWinner()
 }
 
-function GuestPlusOne() {
-    guestCount += 1;
-    guestScr.textContent = guestCount
+function AwayPlusOne() {
+    awayCount += 1;
+    awayScr.textContent = awayCount
     CheckWinner()
 }
 
-function GuestPlusTwo() {
-    guestCount += 2;
-    guestScr.textContent = guestCount
+function AwayPlusTwo() {
+    awayCount += 2;
+    awayScr.textContent = awayCount
     CheckWinner()
 }
 
-function GuestPlusThree() {
-    guestCount += 3;
-    guestScr.textContent = guestCount
+function AwayPlusThree() {
+    awayCount += 3;
+    awayScr.textContent = awayCount
     CheckWinner()
 }
 
 function NewGame() {
     homeCount = 0
-    guestCount = 0
+    awayCount = 0
     homeScr.textContent = 0
-    guestScr.textContent = 0
+    awayScr.textContent = 0
     CheckWinner()
 }
 
 function CheckWinner() {
-    if (homeCount > guestCount)
+    if (homeCount > awayCount)
     {
         theWinnerEl.textContent = "The winner so far is : " + "Home"
     }
-    else if (homeCount < guestCount)
+    else if (homeCount < awayCount)
     {
-        theWinnerEl.textContent = "The winner so far is : " + "Guest"
+        theWinnerEl.textContent = "The winner so far is : " + "Away"
     }
     else
     {

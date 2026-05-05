@@ -22,7 +22,7 @@ body {
     font-size: 40px;
 }
 
-#home-score-num, #guest-score-num {
+#home-score-num, #away-score-num {
     background-color: #080001;
     color: #F94F6D;
     padding: 20px 50px;
